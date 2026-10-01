@@ -3,17 +3,11 @@
 [![Windows tests](https://github.com/Lyu-ZH/codex-approval-notifier/actions/workflows/test.yml/badge.svg)](https://github.com/Lyu-ZH/codex-approval-notifier/actions/workflows/test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-**更适合习惯在 Cursor 或 VS Code 中使用 Codex 插件的用户。**
+**更适合习惯在 Cursor 或 VS Code 中使用 Codex 插件的用户。** 在不直接使用 Codex 桌面客户端的工作流程中，编辑器内的任务消息不一定会触发系统通知，切换窗口或离开电脑后容易错过。
 
-当你通过编辑器内的 Codex 插件工作、不直接使用 Codex 桌面客户端时，编辑器中的任务消息不一定会以系统通知或手机推送的形式送达。切换窗口或暂时离开电脑后，回答完成、执行失败等提示容易被遗漏。本工具为这一使用场景补充桌面与手机提醒，让你在编辑器之外也能及时了解任务状态。
+**支持 Windows 与 iOS 双端提醒：** Windows 端运行监视器并显示桌面弹窗，iPhone 端通过 Bark 接收推送，帮助你及时获知回答完成、任务中断或执行失败。
 
-**支持 Windows 电脑与 iOS 手机双端提醒：** 监视器运行在 Windows 上并显示桌面弹窗；iPhone 通过 Bark 接收手机推送。两端配置完成后，即使不在编辑器界面或电脑旁，也能收到已启用事件的通知。
-
-A lightweight companion for Codex users in Cursor or VS Code: Windows desktop popups and optional Bark notifications on iOS for completed turns, interruptions, failures, and opt-in requests.
-
-一个基于 PowerShell 的 Windows 通知工具。使用 Codex 工作时，即使切换到其他窗口，也可以通过桌面弹窗或手机推送获知回答完成、任务中断等状态。
-
-工具增量读取本机 Codex 的 JSONL 会话日志，可配合 Codex 桌面应用，以及 VS Code / Cursor 中的 Codex 扩展使用。它是独立社区工具，不是 OpenAI 官方项目。
+工具基于 PowerShell，增量读取本机 Codex 的 JSONL 会话日志，也可配合 Codex 桌面应用使用。它是独立社区工具，不是 OpenAI 官方项目。
 
 ## 当前默认行为
 
