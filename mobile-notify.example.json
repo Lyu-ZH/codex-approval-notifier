@@ -1,0 +1,10 @@
+{
+  "enabled": false,
+  "provider": "bark",
+  "url": "https://api.day.app/YOUR_DEVICE_KEY",
+  "sound": "bell",
+  "level": "active",
+  "maxAttempts": 3,
+  "timeoutSeconds": 12,
+  "retryDelaySeconds": 5
+}

@@ -1,0 +1,23 @@
+# Private notification credentials
+mobile-notify.json
+.env
+.env.*
+!.env.example
+
+# Runtime files and generated alerts
+notifier.log*
+pending-approval-*
+*.log
+
+# Local backups and test fixtures
+*.bak
+*.bak-*
+test-data-*/
+__pycache__/
+
+# Local packaging and editor state
+*.zip
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
