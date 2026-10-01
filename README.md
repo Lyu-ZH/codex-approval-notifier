@@ -3,7 +3,13 @@
 [![Windows tests](https://github.com/Lyu-ZH/codex-approval-notifier/actions/workflows/test.yml/badge.svg)](https://github.com/Lyu-ZH/codex-approval-notifier/actions/workflows/test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A lightweight Windows companion for Codex: desktop popups and optional Bark phone notifications for completed turns, interruptions, failures, and opt-in requests.
+**更适合习惯在 Cursor 或 VS Code 中使用 Codex 插件的用户。**
+
+当你通过编辑器内的 Codex 插件工作、不直接使用 Codex 桌面客户端时，编辑器中的任务消息不一定会以系统通知或手机推送的形式送达。切换窗口或暂时离开电脑后，回答完成、执行失败等提示容易被遗漏。本工具为这一使用场景补充桌面与手机提醒，让你在编辑器之外也能及时了解任务状态。
+
+**支持 Windows 电脑与 iOS 手机双端提醒：** 监视器运行在 Windows 上并显示桌面弹窗；iPhone 通过 Bark 接收手机推送。两端配置完成后，即使不在编辑器界面或电脑旁，也能收到已启用事件的通知。
+
+A lightweight companion for Codex users in Cursor or VS Code: Windows desktop popups and optional Bark notifications on iOS for completed turns, interruptions, failures, and opt-in requests.
 
 一个基于 PowerShell 的 Windows 通知工具。使用 Codex 工作时，即使切换到其他窗口，也可以通过桌面弹窗或手机推送获知回答完成、任务中断等状态。
 
@@ -11,7 +17,7 @@ A lightweight Windows companion for Codex: desktop popups and optional Bark phon
 
 ## 当前默认行为
 
-| 事件 | Windows 桌面 | 手机 Bark |
+| 事件 | Windows 桌面 | iOS 手机（Bark） |
 | --- | --- | --- |
 | 每轮回答结束，包括普通回答 | 开启 | 配置后开启 |
 | Goal 完成调用 | 开启 | 配置后开启 |
@@ -30,7 +36,7 @@ A lightweight Windows companion for Codex: desktop popups and optional Bark phon
 - Windows 10 / 11，Windows PowerShell 5.1。
 - Codex 在本机生成会话日志，默认目录为 `%USERPROFILE%\.codex\sessions`。
 - Windows Script Host 可用。桌面提醒使用 `wscript.exe` 弹窗，**不是 Windows 通知中心的 Toast 通知**。
-- 如需手机提醒，准备 Bark 客户端及个人推送地址；不配置手机也可以使用桌面提醒。
+- 如需手机提醒，在 iPhone 上安装 Bark 并准备个人推送地址；不配置手机也可以使用 Windows 桌面提醒。
 
 无需安装 Python、Node.js 或第三方 PowerShell 模块。
 
